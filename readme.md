@@ -1,1 +1,1 @@
-<img src="images/Readme.png" align="center">
+<img src="Readme.png" align="center">
