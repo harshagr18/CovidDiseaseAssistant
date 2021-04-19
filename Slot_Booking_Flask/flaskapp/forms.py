@@ -11,10 +11,9 @@ class RegistrationForm(FlaskForm):
     submit = SubmitField('Sign Up')
 
     def validate_username(self, username):
-        if username.data != current_user.username:
-            user = User.query.filter_by(username=username.data).first()
-            if user:
-                raise ValidationError("That username is taken.")
+        user = User.query.filter_by(username=username.data).first()
+        if user:
+            raise ValidationError("That username is taken.")
 
 
 

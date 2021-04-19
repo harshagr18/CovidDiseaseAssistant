@@ -24,7 +24,7 @@
                       TheDiseaseAssistantProject.github</a>
             </p>
             {% if current_user.is_authenticated %}
-            <a href="{{ url_for('new_booking') }}" style="padding-left: 20px;padding-right: 20px;font-weight: bold;" class="btn btn-primary col-sm-10 col-lg-2"> Book </a>
+            <a href="{{ url_for('new_booking') }}" style="padding-left: 20px;padding-right: 20px;font-weight: bold;" class="btn btn-primary col-sm-10 col-lg-2"> New Slot </a>
             <a href="{{ url_for('account') }}" style="padding-left: 20px;padding-right: 20px;font-weight: bold;" class="btn btn-primary col-sm-10 col-lg-2"> Account </a>
             <a href="{{ url_for('logout') }}" style="padding-left: 20px;padding-right: 20px;font-weight: bold;" class="btn btn-primary col-sm-10 col-lg-2"> Logout </a>
             {% else %}
@@ -62,7 +62,7 @@
                     <button type="button" style="margin-bottom:10px;margin-right:5px" class="btn btn-danger col-sm-10 col-lg-2"> Day {{ booking.Day }} , {{ booking.Time }} {{ booking.Name }} </button>
                 {% endif %}
                 <div>
-                    <a class="btn btn-secondary btn-sm m-1" href="{{ url_for('update_booking', booking_id = booking.id)}}">Update</a>
+                    <a class="btn btn-secondary btn-sm m-1" href="{{ url_for('update_booking', booking_id = booking.id)}}">Book</a>
                 </div>
             </div>
           </div>

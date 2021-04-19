@@ -24,7 +24,7 @@
                       TheDiseaseAssistantProject.github</a>
             </p>
             {% if current_user.is_authenticated %}
-            <a href="{{ url_for('new_booking') }}" style="padding-left: 20px;padding-right: 20px;font-weight: bold;" class="btn btn-primary col-sm-10 col-lg-2"> Book </a>
+            <a href="{{ url_for('new_booking') }}" style="padding-left: 20px;padding-right: 20px;font-weight: bold;" class="btn btn-primary col-sm-10 col-lg-2"> New Slot </a>
             <a href="{{ url_for('logout') }}" style="padding-left: 20px;padding-right: 20px;font-weight: bold;" class="btn btn-primary col-sm-10 col-lg-2"> Logout </a>
             {% else %}
               <a href="/register" style="padding-left: 20px;padding-right: 20px;font-weight: bold;" class="btn btn-primary col-sm-10 col-lg-2"> Register </a>

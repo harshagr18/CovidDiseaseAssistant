@@ -16,7 +16,7 @@ def make_reply(msg):
     elif msg == "I am feeling well":
         reply = "You have been in public places a lot recently. A checkup is adviced even though you seem to have no symptoms. You will be sent expert suggested remedies shortly, type Yes if you would like to book a medical appointment."
     elif msg == "Yes":
-        reply = "Please visit https://github.com/harshagr18/DiseaseAssistant"
+        reply = "Please visit http://127.0.0.1:5000/home"
     elif msg == "234567":
         user = "Jagjeet"
         reply = "Hello Mr. Jagjeet, please tell me how you are feeling."
