@@ -4,7 +4,7 @@
 <div align="center"> <a href="https://youtu.be/wsnlKyeBvTA"><img src="http://img.youtube.com/vi/wsnlKyeBvTA/0.jpg" width="30%"></a> <br> <a href="https://youtu.be/cCuRLkp0KQ8">Demonstration Video</a></div>
 <br><br>
 
-<a href="https://bit.ly/beProjectG1">Click here for project files!</a>
+<a href="https://bit.ly/beProjectG1">Click here for ML training data, presentation and other files.</a>
 
 ## License
 
