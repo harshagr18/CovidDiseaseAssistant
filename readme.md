@@ -1,12 +1,10 @@
-<img src="Readme.png" align="center">
-
-## YouTube Demo Video
+### YouTube Demo Video
 </div>
 
 <div align="center"> <a href="https://youtu.be/wsnlKyeBvTA"><img src="http://img.youtube.com/vi/wsnlKyeBvTA/0.jpg" width="30%"></a> <br> <a href="https://youtu.be/cCuRLkp0KQ8">Demonstration Video</a></div>
 <br><br>
 
-## All Project Files
+### All Project Files
 
 <a href="bit.ly/beProjectG1">Click here!</a>
 
