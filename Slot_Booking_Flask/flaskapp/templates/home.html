@@ -60,7 +60,9 @@
                             {% else %}
                                 <a href="{{ url_for('booking', booking_id=booking.id) }}" style="margin-bottom:10px;margin-right:5px" class="btn btn-danger col-sm-10 col-lg-2"> Day {{ booking.Day }} , {{ booking.Time }} {{ booking.Name }} </a>
                             {% endif %}
-                        {% endfor %}    
+                        {% endfor %}
+                        
+                        <img src="{{url_for('static', filename='CDA-intro.png')}}" align="middle" class="img-fluid"/>
             </div>
           </div>
           <!-- End rounded tabs -->

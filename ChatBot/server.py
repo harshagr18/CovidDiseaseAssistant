@@ -16,7 +16,7 @@ def make_reply(msg):
     elif msg == "I am feeling well":
         reply = "You have been in public places a lot recently. A checkup is adviced even though you seem to have no symptoms. You will be sent expert suggested remedies shortly, type Yes if you would like to book a medical appointment."
     elif msg == "Yes":
-        reply = "Please visit http://127.0.0.1:5000/home"
+        reply = "Please visit ec2-15-207-249-8.ap-south-1.compute.amazonaws.com:8080"
     elif msg == "234567":
         user = "Jagjeet"
         reply = "Hello Mr. Jagjeet, please tell me how you are feeling."
@@ -26,6 +26,8 @@ def make_reply(msg):
         reply = "You have been at home for most of the past 15 days, you were probably flagged for recent unhealthy interactions. Be sure to avoid such interactions next time."
     elif msg == "Thank you":
         reply = "Stay safe, follow all safety guidelines and report all symptoms to get checked as soon as possible."
+    elif msg =="Done":
+        reply = ""
     elif msg is not None or "Reset":
         reply = "Hi! My name is CovidDiseaseAssistant, I am an AI Chatbot. Please tell me your CDA-ID. Type thank you to end the chat."
     return reply

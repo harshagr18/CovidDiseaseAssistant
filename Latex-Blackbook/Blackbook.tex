@@ -1,0 +1,713 @@
+\documentclass[12pt]{article}
+\pagenumbering{roman}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{soul}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{extarrows}
+\usepackage{graphicx}
+\usepackage[backend=biber,
+style=numeric,
+sorting=none,
+isbn=false,
+doi=false,
+url=false,
+]{biblatex}\addbibresource{bibliography-biblatex.bib}
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{txfonts}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+\tikzset{>={Latex[width=1.5mm,length=2mm]}}
+\usepackage{flowchart}\usepackage[paperheight=11.69in,paperwidth=8.27in,left=1.18in,right=0.79in,top=1.68in,bottom=1.37in,headheight=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,}
+
+\urlstyle{same}
+
+
+ %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+% 1) Section
+% 1.1) SubSection
+% 1.1.1) SubSubSection
+% 1.1.1.1) Paragraph
+% 1.1.1.1.1) Subparagraph
+
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+ %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+
+\setlistdepth{9}
+\renewlist{enumerate}{enumerate}{9}
+		\setlist[enumerate,1]{label=\arabic*)}
+		\setlist[enumerate,2]{label=\alph*)}
+		\setlist[enumerate,3]{label=(\roman*)}
+		\setlist[enumerate,4]{label=(\arabic*)}
+		\setlist[enumerate,5]{label=(\Alph*)}
+		\setlist[enumerate,6]{label=(\Roman*)}
+		\setlist[enumerate,7]{label=\arabic*}
+		\setlist[enumerate,8]{label=\alph*}
+		\setlist[enumerate,9]{label=\roman*}
+
+\renewlist{itemize}{itemize}{9}
+		\setlist[itemize]{label=$\cdot$}
+		\setlist[itemize,1]{label=\textbullet}
+		\setlist[itemize,2]{label=$\circ$}
+		\setlist[itemize,3]{label=$\ast$}
+		\setlist[itemize,4]{label=$\dagger$}
+		\setlist[itemize,5]{label=$\triangleright$}
+		\setlist[itemize,6]{label=$\bigstar$}
+		\setlist[itemize,7]{label=$\blacklozenge$}
+		\setlist[itemize,8]{label=$\prime$}
+
+
+
+ %%%%%%%%%%%%  Header here  %%%%%%%%%%%%%%
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ \setlength{\parskip}{0.0pt}
+
+\vspace{\baselineskip}
+\setlength{\parskip}{12pt}
+}
+\lfoot{ 
+\vspace{\baselineskip}
+\setlength{\parskip}{0.0pt}
+\setlength{\parskip}{12pt}
+
+\vspace{\baselineskip}
+\setlength{\parskip}{0.0pt}
+\setlength{\parskip}{12pt}
+}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\topsep}{0pt}\setlength{\parskip}{9.96pt}
+\setlength{\parindent}{0pt}
+
+
+ %%%%%%%%%%%%  Footer Here  %%%%%%%%%%%%%%
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[CE,CO]{Department of Electronics and Telecommunication}
+\fancyfoot[LE,RO]{\thepage}
+
+ %%%%%%%%%%%%  This sets linespacing (verticle gap between Lines) Default=1 %%%%%%%%%%%%%%
+
+
+\renewcommand{\arraystretch}{1.3}
+
+
+%%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+\begin{Center}
+Diseases Assistant- Literature Survey
+\end{Center}
+\begin{Center}
+\textbf{Disease Assistant}
+\end{Center}
+\begin{Center}
+Submitted in partial fulfillment of the requirements
+\end{Center}
+\begin{Center}
+of the degree of
+\end{Center}
+
+\vspace{\baselineskip}
+\begin{Center}
+Bachelor of Engineering
+\end{Center}
+\begin{Center}
+in
+\end{Center}
+\setlength{\parskip}{18.0pt}
+\begin{Center}
+Electronics and Telecommunication Engineering
+\end{Center}
+\begin{Center}
+by
+\end{Center}
+\setlength{\parskip}{9.96pt}
+\begin{Center}
+ABHISHEK KUMAR{\fontsize{14pt}{16.8pt}\selectfont \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  117A2001}
+\end{Center}
+\begin{Center}
+AGRAWAL HARSH SANJAY {\fontsize{14pt}{16.8pt}\selectfont \ \ \ \ \ \ \ \ \ \  117A2005}
+\end{Center}
+\begin{Center}
+KHOT ADITI RAJA{\fontsize{14pt}{16.8pt}\selectfont N\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  117A2051}
+\end{Center}
+\begin{Center}
+MALHOTRA JAGJEET SINGH{\fontsize{14pt}{16.8pt}\selectfont \ \ \ \ \ \ \ \ \  117A2054}
+\end{Center}
+
+\vspace{\baselineskip}
+\begin{Center}
+Under the Guidance of:
+\end{Center}
+\begin{Center}
+{\fontsize{14pt}{16.8pt}\selectfont Prof. Pushkar Sathe}
+\end{Center}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[H]
+	\begin{Center}
+		\includegraphics[width=1.93in,height=0.96in]{./media/image1.png}
+	\end{Center}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%% Figure/Image No: 1 Ends here %%%%%%%%%%%%%%%%%%%%
+
+\vspace{\baselineskip}
+\setlength{\parskip}{0.0pt}
+\setlength{\parskip}{9.96pt}
+\setlength{\parskip}{0.0pt}
+\begin{Center}
+{\fontsize{14pt}{16.8pt}\selectfont Department of Electronics and Telecommunication Engineering }
+\end{Center}
+\begin{Center}
+{\fontsize{14pt}{16.8pt}\selectfont SIES GRADUATE SCHOOL OF TECHNOLOGY}
+\end{Center}
+\begin{Center}
+{\fontsize{14pt}{16.8pt}\selectfont Nerul, Navi Mumbai 400706}
+\end{Center}
+\begin{Center}
+{\fontsize{14pt}{16.8pt}\selectfont University of Mumbai}
+\end{Center}
+\begin{Center}
+{\fontsize{14pt}{16.8pt}\selectfont 2020-2021}
+\end{Center}
+
+\begin{Center}
+{\fontsize{18pt}{21.6pt}\selectfont \textbf{CERTIFICATE}}
+\end{Center}
+
+\vspace{\baselineskip}
+\setstretch{2.0}
+\setlength{\parskip}{9.96pt}
+\begin{justify}
+{\fontsize{16pt}{19.2pt}\selectfont This is to certify that the project entitled \textbf{Disease Assistant} is a bonafide work of the following students, submitted to the University of Mumbai in partial fulfillment of the requirement for the award of the degree of \textbf{Bachelor of Engineering} in Electronics and Telecommunication Engineering\textbf{.}\par}
+\end{justify}
+
+\vspace{\baselineskip}
+\begin{Center}
+{\fontsize{14pt}{16.8pt}\selectfont ABHISHEK\ KUMAR\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \   117A2001}
+\end{Center}
+\begin{Center}
+{\fontsize{14pt}{16.8pt}\selectfont AGRAWAL\ HARSH\ SANJAY\ \ \ \ \ \ \    117A2005}
+\end{Center}
+\begin{Center}
+{\fontsize{14pt}{16.8pt}\selectfont KHOT\ ADITI\ RAJAN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \    117A2051}
+\end{Center}
+\begin{Center}
+{\fontsize{14pt}{16.8pt}\selectfont MALHOTRA\ JAGJEET\ SINGH\ \ \ \ \    117A2054}
+\end{Center}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\setstretch{1.0}
+\begin{justify}
+{\fontsize{14pt}{16.8pt}\selectfont Prof. Pushkar Sathe \tab \ \ \ \ \ \ \ \ \ Dr.\ Preeti\ Hemnani\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Dr.\ Atul\ Kemkar\ \ \ \ \ \ \ \ \ \ \        \par}
+\end{justify}
+\begin{justify}
+{\fontsize{14pt}{16.8pt}\selectfont \ \ \ \ Internal\ Guide\ \ \ \    \tab \ \ \ \ \ \ \ \  Head of Department \tab \tab \ \ \  Principal}
+\end{justify}
+\begin{Center}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+\textbf{PROJECT REPORT APPROVAL}
+\end{Center}
+
+\vspace{\baselineskip}
+This project report entitled \textbf{\textit{Disease Assistant}} by following students is approved for the degree of \textbf{\textit{Bachelor of Engineering}} in \textbf{\textit{Electronics and Telecommunication }}
+
+\vspace{\baselineskip}
+\textbf{\textit{ABHISHEK KUMAR SHREEVATS\ \ \ \  117A2001}} \\
+\textbf{\textit{AGRAWAL HARSH SANJAY\ \ \ \ \ \ \ \ \ \ \ \ \ \ \  117A2005}} \\
+\textbf{\textit{KHOT ADITI RAJAN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  117A2051}} \\
+\textbf{\textit{MALHOTRA\ JAGJEET\ SINGH\ \ \ \ \ \ \ \ \    117A2054}} \\
+\textbf{\textit{NARINDERPAL SINGH\ \ \  }}
+
+\vspace{\baselineskip}
+\setstretch{2.0}
+
+\vspace{\baselineskip}
+\begin{FlushRight}
+\textbf{Name of External Examiner: --------------------------------}
+\end{FlushRight}
+\begin{FlushRight}
+\textbf{Signature:--------------------------------}
+\end{FlushRight}
+\begin{FlushRight}
+\textbf{Name of Internal Examiner: --------------------------------}
+\end{FlushRight}
+\begin{FlushRight}
+\textbf{Signature:--------------------------------}
+\end{FlushRight}
+\textbf{Date:} \\
+\textbf{Place:}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+
+\begin{Center}
+\textbf{DECLARATION}
+\end{Center}
+\setstretch{1}
+\begin{justify}
+I declare that this written submission represents my ideas in my own words and where others’ ideas or words have been included, I have adequately cited and referenced the original sources. I also declare that I have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea/data/fact/source in my submission. I understand that any violation of the above will be cause for disciplinary action by the Institute and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been taken when needed.
+\end{justify}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+ABHISHEK KUMAR SHREEVATS\ \ \ \  117A2001 \_\_\_\_\_\_\_\_\_\_\_\_\_\ \\ \ \ \ \ \ \  
+AGRAWAL HARSH SANJAY\ \ \ \ \ \ \ \ \ \ \ \ \ \  117A2005 \_\_\_\_\_\_\_\_\_\_\_\_\_\\
+KHOT ADITI RAJAN\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  117A2051 \_\_\_\_\_\_\_\_\_\_\_\_\_ \\
+MALHOTRA\ JAGJEET\ SINGH\ \ \ \ \ \ \ \ \ \ \    117A2054 \_\_\_\_\_\_\_\_\_\_\_\_\_\\
+ NARINDERPAL SINGH\ \ \ \ \  
+\begin{adjustwidth}{2.0in}{0.0in}
+\begin{Center}
+\ \ \ Signature
+\end{Center}
+\end{adjustwidth}
+
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\setstretch{2.0}
+Date:
+
+\vspace{\baselineskip}
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \  
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+
+\begin{Center}
+\textbf{ACKNOWLEDGEMENT}
+\end{Center}
+\setstretch{1}
+\begin{justify}
+It gives us immense pleasure to thank Dr. Atul Kemkar , our Principal for extending his support to carry out this project. We also thank our HoD, Dr. Preeti Hemnani for her support in completing the project. We wish to express our deep sense of gratitude and thanks to our Internal Guide, Prof. Pushkar M Sathe for his guidance, help and useful suggestions, which helped in completing our project work in time and for his guidance provided whenever required.
+\end{justify}
+\begin{justify}
+Also we would like to thank the entire faculty of Electronics and Telecommunication department for their valuable ideas and timely assistance in this project, last but not the least, we would like to thank our teaching and non teaching staff members of our college for their support, in facilitating timely completion of this project.
+\end{justify}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\begin{FlushRight}
+\textbf{Project Team}
+\end{FlushRight}
+\begin{FlushRight}
+ABHISHEK KUMAR SHREEVATS\ \ \ \  
+\end{FlushRight}
+\begin{FlushRight}
+AGRAWAL HARSH SANJAY\ \ \  
+\end{FlushRight}
+\begin{FlushRight}
+KHOT ADITI RAJAN\ \ \ \ \  
+\end{FlushRight}
+\begin{FlushRight}
+MALHOTRA JAGJEET SINGH NARINDERPAL SINGH\ \ \  
+\end{FlushRight}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+
+\begin{Center}
+\textbf{ABSTRACT}
+\end{Center}
+\setlength{\parskip}{0.0pt}
+\begin{justify}
+{\fontsize{10pt}{12.0pt}\selectfont \  }A\ disease\ becomes\ a pandemic when it is neglected and has a very high infection rate.  Humans tend to ignore simple safety measures like social distancing and wearing a mask. Considering any highly infectious disease this is very detrimental. This project as a solution, introduces passive and active models. The passive model consists of Face-mask detection and Social distancing model. The Face is detected using Haar Cascade Frontal face classifier and Face Mask Detection system is built with OpenCV, Keras/TensorFlow. MobileNetV2 is used in Transfer Learning. The Social-distancing is measured using simple Euclidean Distance of bounding boxes. In order to increase the efficiency and visibility, the Bird’s eye view model using Dectectron 2.0 is implemented.  An email is sent to the pedestrians that are dangerously close and are violating social-distancing. The passive model comprises an interactive chat-bot built using Telegram, collecting the user information and leading to the front-end booking page for medical assistance built using Python Flask. The patient can book doctor’s appointments at desired timing and date as per the availability.  In order to mitigate the problem of storage the project can be further developed and stored onto Microsoft Azure, increasing the availability, scalability and cost-effectiveness. The system can be modified to target specific symptoms since all of them are pre included.One of the main salient features of the project is parallel working. Multiple models, working parallely on multiple images ensures no disagreement between models. Use of a destructor ensures that memory is saved. EDGE technology and an effective UI helps the user get the best interface possible.
+\end{justify}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+
+\vspace{\baselineskip}
+\setlength{\parskip}{9.96pt}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\setlength{\parskip}{0.0pt}
+\setlength{\parskip}{9.96pt}
+\begin{justify}
+\  
+\end{justify}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+
+\vspace{\baselineskip}
+\begin{Center}
+{\fontsize{18pt}{21.6pt}\selectfont \textbf{Contents}}
+\end{Center}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+{
+\setlength\extrarowheight{3pt}
+\begin{longtable}{p{0.92in}p{4.22in}p{0.71in}}
+
+\endfirsthead
+\multicolumn{3}{c}{\textit{continued from previous page}}\hline
+\endhead
+\multicolumn{3}{r}{\textit{continued on next page}} \\
+\endfoot
+\endlastfoot\hline
+%row no:1
+\multicolumn{1}{|p{0.92in}}{} & 
+\multicolumn{1}{|p{4.22in}}{} & 
+\multicolumn{1}{|p{0.71in}|}{\textbf{Page No.}} \\
+\hhline{---}
+%row no:2
+\multicolumn{1}{|p{0.92in}}{\textbf{Chapter 1}} & 
+\multicolumn{1}{|p{4.22in}}{\textbf{Introduction }} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering \textbf{1-3}} \\
+\hhline{---}
+%row no:3
+\multicolumn{1}{|p{0.92in}}{} & 
+\multicolumn{1}{|p{4.22in}}{1.1 Introduction and need of the project} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 1-2} \\
+\hhline{---}
+%row no:4
+\multicolumn{1}{|p{0.92in}}{} & 
+\multicolumn{1}{|p{4.22in}}{1.2 Problem statement in broad sense} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 2} \\
+\hhline{---}
+%row no:5
+\multicolumn{1}{|p{0.92in}}{} & 
+\multicolumn{1}{|p{4.22in}}{1.3 Organization of the report} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 3} \\
+\hhline{---}
+%row no:6
+\multicolumn{1}{|p{0.92in}}{\textbf{Chapter 2}} & 
+\multicolumn{1}{|p{4.22in}}{\textbf{Literature Review }} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering \textbf{4-5}} \\
+\hhline{---}
+%row no:7
+\multicolumn{1}{|p{0.92in}}{\textbf{Chapter 3}} & 
+\multicolumn{1}{|p{4.22in}}{\textbf{Report on Present Investigation}} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering \textbf{6-13}} \\
+\hhline{---}
+%row no:8
+\multicolumn{1}{|p{0.92in}}{} & 
+\multicolumn{1}{|p{4.22in}}{3.1 Objectives} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 6} \\
+\hhline{---}
+%row no:9
+\multicolumn{1}{|p{0.92in}}{} & 
+\multicolumn{1}{|p{4.22in}}{3.2 System architecture and design } & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 6-7} \\
+\hhline{---}
+%row no:10
+\multicolumn{1}{|p{0.92in}}{} & 
+\multicolumn{1}{|p{4.22in}}{3.3 Algorithm} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 8} \\
+\hhline{---}
+%row no:11
+\multicolumn{1}{|p{0.92in}}{} & 
+\multicolumn{1}{|p{4.22in}}{3.4 Methodology } & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 9-11} \\
+\hhline{---}
+%row no:12
+\multicolumn{1}{|p{0.92in}}{} & 
+\multicolumn{1}{|p{4.22in}}{3.5 Model implementation } & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 12-13} \\
+\hhline{---}
+%row no:13
+\multicolumn{1}{|p{0.92in}}{\textbf{Chapter 4}} & 
+\multicolumn{1}{|p{4.22in}}{\textbf{Results and Discussions}} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering \textbf{14-20}} \\
+\hhline{---}
+%row no:14
+\multicolumn{1}{|p{0.92in}}{} & 
+\multicolumn{1}{|p{4.22in}}{4.1 Passive Model Output} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 14-15} \\
+\hhline{---}
+%row no:15
+\multicolumn{1}{|p{0.92in}}{} & 
+\multicolumn{1}{|p{4.22in}}{4.2 Active Model Output} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 16-20} \\
+\hhline{---}
+%row no:16
+\multicolumn{1}{|p{0.92in}}{\textbf{Chapter 5}} & 
+\multicolumn{1}{|p{4.22in}}{\textbf{Conclusion and Future scope}} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 21} \\
+\hhline{---}
+%row no:17
+\multicolumn{1}{|p{0.92in}}{\textbf{References}} & 
+\multicolumn{1}{|p{4.22in}}{} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 22} \\
+\hhline{---}
+%row no:18
+\multicolumn{1}{|p{0.92in}}{\textbf{Plagiarism report}} & 
+\multicolumn{1}{|p{4.22in}}{} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 23-25} \\
+\hhline{---}
+%row no:19
+\multicolumn{1}{|p{0.92in}}{\textbf{Publication details }} & 
+\multicolumn{1}{|p{4.22in}}{} & 
+\multicolumn{1}{|p{0.71in}|}{\Centering 25+ \par } \\
+\hhline{---}
+
+\end{longtable}}
+
+%%%%%%%%%%%%%%%%%%%% Table No: 1 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+\setstretch{2.0}
+
+\vspace{\baselineskip}
+
+
+ %%%%%%%%%%%%  Starting New Page here %%%%%%%%%%%%%%
+
+\newpage
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\begin{Center}
+\textbf{List of Figures}
+\end{Center}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{0.54in}p{4.89in}p{0.38in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{0.54in}}{\Centering \textbf{Figure} \par \Centering \textbf{No.}} & 
+\multicolumn{1}{|p{4.89in}}{\Centering \textbf{Figure Caption}} & 
+\multicolumn{1}{|p{0.38in}|}{\Centering \textbf{Page} \par \Centering \textbf{No.}} \\
+\hhline{---}
+%row no:2
+\multicolumn{1}{|p{0.54in}}{\Centering 1} & 
+\multicolumn{1}{|p{4.89in}}{Project flowchart} & 
+\multicolumn{1}{|p{0.38in}|}{9} \\
+\hhline{---}
+%row no:3
+\multicolumn{1}{|p{0.54in}}{\Centering 2} & 
+\multicolumn{1}{|p{4.89in}}{Output of mask and social distancing models} & 
+\multicolumn{1}{|p{0.38in}|}{14} \\
+\hhline{---}
+%row no:4
+\multicolumn{1}{|p{0.54in}}{\Centering 3} & 
+\multicolumn{1}{|p{4.89in}}{Bird’s eye view using Detectron 2.0} & 
+\multicolumn{1}{|p{0.38in}|}{15} \\
+\hhline{---}
+%row no:5
+\multicolumn{1}{|p{0.54in}}{\Centering 4} & 
+\multicolumn{1}{|p{4.89in}}{Email received by high-risk} & 
+\multicolumn{1}{|p{0.38in}|}{16} \\
+\hhline{---}
+%row no:6
+\multicolumn{1}{|p{0.54in}}{\Centering 5} & 
+\multicolumn{1}{|p{4.89in}}{CovidDiseaseAssistant ChatBot} & 
+\multicolumn{1}{|p{0.38in}|}{17} \\
+\hhline{---}
+%row no:7
+\multicolumn{1}{|p{0.54in}}{\Centering 6} & 
+\multicolumn{1}{|p{4.89in}}{Disease Assistant Booking Slot Website Page} & 
+\multicolumn{1}{|p{0.38in}|}{18} \\
+\hhline{---}
+%row no:8
+\multicolumn{1}{|p{0.54in}}{\Centering 7} & 
+\multicolumn{1}{|p{4.89in}}{Register Page of Disease Assistant Booking Slot Website} & 
+\multicolumn{1}{|p{0.38in}|}{18} \\
+\hhline{---}
+%row no:9
+\multicolumn{1}{|p{0.54in}}{\Centering 8} & 
+\multicolumn{1}{|p{4.89in}}{After Register page of Disease Assistant Booking Slot Website} & 
+\multicolumn{1}{|p{0.38in}|}{19} \\
+\hhline{---}
+%row no:10
+\multicolumn{1}{|p{0.54in}}{\Centering 9} & 
+\multicolumn{1}{|p{4.89in}}{Booking slot Day 1 Page} & 
+\multicolumn{1}{|p{0.38in}|}{19} \\
+\hhline{---}
+%row no:11
+\multicolumn{1}{|p{0.54in}}{\Centering 10} & 
+\multicolumn{1}{|p{4.89in}}{New Booking Page} & 
+\multicolumn{1}{|p{0.38in}|}{20} \\
+\hhline{---}
+%row no:12
+\multicolumn{1}{|p{0.54in}}{\Centering 11} & 
+\multicolumn{1}{|p{4.89in}}{After Booking Day1 slot by CDA-ID 234567} & 
+\multicolumn{1}{|p{0.38in}|}{20} \\
+\hhline{---}
+
+\end{tabular}
+ \end{table}
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 2 ends here %%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\setstretch{1}
+\setlength{\parskip}{0.0pt}
+\begin{Center}
+{\fontsize{16pt}{19.2pt}\selectfont \textbf{List of Abbreviations}}
+\end{Center}
+\begin{justify}
+In alphanumeric order
+\end{justify}
+
+
+
+%%%%%%%%%%%%%%%%%%%% Table No: 3 starts here %%%%%%%%%%%%%%%%%%%%
+
+
+\begin{table}[H]
+ 			\centering
+\begin{tabular}{p{0.71in}p{5.34in}}
+\hline
+%row no:1
+\multicolumn{1}{|p{0.71in}}{CDA-ID} & 
+\multicolumn{1}{|p{5.34in}|}{Covid Disease Assistant Identity Document} \\
+\hhline{--}
+%row no:2
+\multicolumn{1}{|p{0.71in}}{CNN} & 
+\multicolumn{1}{|p{5.34in}|}{Convolutional neural network} \\
+\hhline{--}
+%row no:3
+\multicolumn{1}{|p{0.71in}}{DDC19} & 
+\multicolumn{1}{|p{5.34in}|}{Dynamic Risk assessment decision support framework for COVID-19 } \\
+\hhline{--}
+%row no:4
+\multicolumn{1}{|p{0.71in}}{EDGE} & 
+\multicolumn{1}{|p{5.34in}|}{Enhanced Data Rates for GSM (Global System for Mobile) Evolution} \\
+\hhline{--}
+%row no:5
+\multicolumn{1}{|p{0.71in}}{GPIO} & 
+\multicolumn{1}{|p{5.34in}|}{General-Purpose Input/Output} \\
+\hhline{--}
+%row no:6
+\multicolumn{1}{|p{0.71in}}{GP} & 
+\multicolumn{1}{|p{5.34in}|}{General Practitioners} \\
+\hhline{--}
+%row no:7
+\multicolumn{1}{|p{0.71in}}{SVM} & 
+\multicolumn{1}{|p{5.34in}|}{Support Vector Machines} \\
+\hhline{--}
+%row no:8
+\multicolumn{1}{|p{0.71in}}{MTCNN} & 
+\multicolumn{1}{|p{5.34in}|}{Multi-Task Cascaded Convolutional Neural Network (MTCNN)} \\
+\hhline{--}
+%row no:9
+\multicolumn{1}{|p{0.71in}}{UI} & 
+\multicolumn{1}{|p{5.34in}|}{User interface} \\
+\hhline{--}
+
+\end{tabular}
+ \end{table}
+
+\printbibliography
+\end{document}
