@@ -1,4 +1,4 @@
-ML_DL/Input/
+machineLearning/Input/
 .ipynb_checkpoints
-Slot_Booking_Flask/__pycache__
-ChatBot/config.cfg
+slotBookingFlask/__pycache__
+chatBot/config.cfg
